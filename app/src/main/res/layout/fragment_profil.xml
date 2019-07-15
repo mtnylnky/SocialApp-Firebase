@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cerceve.ProfilFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/bar_profilCerceve"
+        android:background="?android:attr/windowBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_profilCerceve"
+            android:background="?android:attr/windowBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_kullaniciadi_profilCerceve"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kullanıcı Adı"
+                    android:textSize="18sp"
+                    android:maxLines="1"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <ImageView
+                    android:id="@+id/resimSecenekler_profilCerceve"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_secenekler"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    />
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_below="@+id/bar_profilCerceve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/ust_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profil_resmi_profilCercevesi"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@mipmap/ic_launcher"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="8dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txt_gonderiler_profilCerceve"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Gonderiler"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_gravity="center" />
+
+                            <TextView
+                                android:text="Gonderi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txt_takipciler_profilCerceve"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Takipçiler"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_gravity="center" />
+
+                            <TextView
+                                android:text="Takipçi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txt_takipEdilenler_profilCerceve"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Takip"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_gravity="center" />
+
+                            <TextView
+                                android:text="Takip"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/btn_profilDuzenle_profilCerceve"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Profil Düzenle"
+                        android:background="@drawable/button_siyah"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/orta_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_ad_profilCercevesi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textStyle="bold"
+                    android:text="Ad.."
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"/>
+
+                <TextView
+                    android:id="@+id/txt_bio_profilCercevesi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="biyografi"
+                    android:maxLines="5"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorPrimaryDark" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/son_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="-5dp"
+                android:layout_marginRight="-5dp"
+                android:background="@drawable/button_siyah"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imgbtn_fotograflarim_profilCercevesi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_izgara"
+                    style="?android:attr/buttonBarButtonStyle"/>
+
+                <ImageButton
+                    android:id="@+id/imgbtn_kaydedilenFotograflar_profilCercevesi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_kaydet"
+                    style="?android:attr/buttonBarButtonStyle"/>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyler_view_profilCercevesi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyler_view_kaydet_profilCercevesi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profil_resmi_oge"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/ic_launcher"/>
+
+    <LinearLayout
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@id/profil_resmi_oge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/profil_resmi_oge"
+        android:layout_marginLeft="5dp"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/txt_kullaniciadi_oge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kullanıcı Adı"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/txt_ad_oge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ad"
+            android:maxLines="1"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_takip_et"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:text="Takip Et"
+        android:background="@drawable/button_arkaplan"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProfilDuzenleActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/bar_profilDuzenleActivity"
+        android:background="?android:attr/windowBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_profilDuzenleActivity"
+            android:background="?android:attr/windowBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/kapat_resmi_profilDuzenleActivity"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_kapat"
+                    android:layout_alignParentLeft="true" />
+
+                <TextView
+                    android:text="Profil Duzenle"
+                    android:layout_toEndOf="@+id/kapat_resmi_profilDuzenleActivity"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/kapat_resmi_profilDuzenleActivity"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/txt_kaydet_profilDuzenleActivity"
+                    android:textSize="16sp"
+                    android:text="KAYDET"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profil_resmi_profilDuzenleActivity"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/txt_fotograf_degistir_profilDuzenleActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:text="Fotoğrafı Değiştir"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/material_edt_text_Ad_profilDuzenleActivity"
+            android:hint="Adınız..."
+            android:layout_marginTop="20dp"
+            app:met_floatingLabel="normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/material_edt_text_KullaniciAdi_profilDuzenleActivity"
+            android:hint="Kullanıcı Adı"
+            app:met_floatingLabel="normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/material_edt_text_Biyografi_profilDuzenleActivity"
+            android:hint="Biyografi"
+            app:met_floatingLabel="normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

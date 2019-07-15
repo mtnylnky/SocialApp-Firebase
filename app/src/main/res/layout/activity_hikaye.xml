@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HikayeActivity">
+
+    <ImageView
+        android:id="@+id/resim_hikayeActivity"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/atla_hikayeActivity"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <View
+            android:id="@+id/geri_hikayeActivity"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <jp.shts.android.storiesprogressview.StoriesProgressView
+        android:id="@+id/hikayeler_hikayeActivity"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_marginTop="8dp"/>
+
+    <RelativeLayout
+        android:layout_below="@+id/hikayeler_hikayeActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/hikaye_fotografi_hikayeActivity"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/hikaye_kullaniciadi_hikayeActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_toEndOf="@id/hikaye_fotografi_hikayeActivity"
+            android:layout_toRightOf="@id/hikaye_fotografi_hikayeActivity"
+            android:layout_centerVertical="true"
+            android:textColor="#FFF"
+            android:layout_margin="5dp"
+            android:text="Kullanıcı Adı"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/r_gorulen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="#22918484"
+        android:padding="4dp"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/hikaye_goruntuleyenler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/goruntuleme_sayisi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#FFF"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/hikaye_silme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hikaye_silme"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:padding="3dp"/>
+</RelativeLayout>

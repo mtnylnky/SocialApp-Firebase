@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cerceve.BildirimFragment">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/bar_bildirimCercevesi"
+        android:background="?android:attr/windowBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_bildirimCercevesi"
+            android:background="?android:attr/windowBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Bildirimler"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_bildirimCercevesi"
+        android:layout_below="@+id/bar_bildirimCercevesi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="NotSibling">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
